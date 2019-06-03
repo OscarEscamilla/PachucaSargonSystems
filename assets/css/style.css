@@ -1,0 +1,108 @@
+*{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../img/cubes.png');
+}
+
+#logo{
+    height: 90px;
+    width: 130px;
+    
+}
+
+#header{
+    margin-top: 300px;
+}
+
+.bg-primary{
+    background-color: #3771ce !important;
+}
+
+.text-primary{
+    color: #3771ce !important;
+}
+
+.btn-primary{
+    background-color: #3771ce !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+.bg-secondary{
+    background-color: white !important;
+}
+
+
+.nav-link{
+    color: #3771ce !important;
+    margin-left: 10px; 
+    font-size: 17px;
+}
+
+.nav-link:hover{
+    color: white !important;
+    margin-left: 10px;
+    margin-rigth: 10px;
+    background-color:  #3771ce!important;
+   
+    
+    border-radius: 10px;
+}
+
+.m-nav{
+    margin-top: 120px;
+}
+
+.mt-carousel{
+    margin-top: 80px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #logo{
+        height: 70px;
+        width: 100px;
+        
+    }
+
+    #header{
+        margin-top: 300px;
+    }
+
+  
+    
+    
+    
+  }
+
+  .navbar{
+    -webkit-box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);
+    box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);   
+  }
+
+  
+
+  .form-control:focus {
+    border-color: #3771ce;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .active{
+      color: white !important;
+  }
