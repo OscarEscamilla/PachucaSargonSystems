@@ -10,7 +10,7 @@
       <li class="breadcrumb-item">
         <a href="<?php echo base_url;?>">Home</a>
       </li>
-      <li class="breadcrumb-item active">Perfil</li>
+      <li class="breadcrumb-item text-dark">Perfil</li>
     </ol>
 
     <div class="row">

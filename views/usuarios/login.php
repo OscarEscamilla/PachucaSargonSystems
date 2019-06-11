@@ -4,9 +4,9 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
         <?php if(isset($_SESSION['login']) && $_SESSION['login'] == 'fallido'):?>
-            <div class="alert alert-dismissible alert-danger">
+            <div class="alert alert-dismissible alert-danger mb-0">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>¡Eror!</strong> Correo o Contraseña invalidos...
+                <strong>¡Error!</strong> Correo o Contraseña invalidos...
             </div>
         <?php endif;?>
         <?php Utils::deleteSession('login'); ?>
@@ -18,7 +18,7 @@
                 <form action="<?php echo base_url;?>login/log" method="POST" >
                     <div class="input-group pb-4">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-car"></i></span>
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
                         </div>
                         <input type="email" name="correo" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>

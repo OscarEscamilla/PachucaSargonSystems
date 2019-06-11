@@ -1,11 +1,13 @@
 *{
     font-family: 'Oswald', sans-serif !important;
+  
 }
 
 #body{
     margin: 0px;
     padding: 0px;
     background-image: url('../img/cubes.png');
+    
 }
 
 #logo{
@@ -105,4 +107,85 @@ a{
 
   .active{
       color: white !important;
+  }
+
+.shadow{
+    text-shadow: 2px 2px 7px #000000;
+}
+
+.portfolio-item{
+    margin-bottom: 30px;
+}
+.card{
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   
+  }
+.card-img-top{
+    border-radius: 0%;
+}
+
+.des{
+    height: 20% !important;
+}
+
+#list-example{
+    position: absolute !important;
+}
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+    pading: 5px;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #3771ce;
+    color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px !important;
+    border-top: none;
+  }
+
+
+  .img-turi{
+      height: 300px;
+      width: 100%;
+  }
+
+  .card-title{
+
+    color: #3771ce;
   }

@@ -9,8 +9,8 @@
         <div class="carousel-item active">
           <img src="<?php echo base_url;?>assets/img/reloj.jpg" class="d-block w-100 h-50" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5 class="shadow">Monumental reloj de pachuca</h5>
+            <p class="shadow">Ubicado en el centro de Pachuca Hidalgo</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -23,8 +23,8 @@
         <div class="carousel-item">
           <img src="<?php echo base_url;?>assets/img/Pachuca_panoramio.jpg" class="d-block w-100  h-50" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h5 class="shadow">Third slide label</h5>
+            <p  class="shadow">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </div>
         </div>
       </div>

@@ -73,6 +73,7 @@
                                     <option value="escuelas">Escuelas</option>
                                     <option value="profesionales">Profesionistas</option>
                                     <option value="comercio">Comercio</option>
+                                    <option value="otro">Otro</option>
                                 </select>
                                 
                             </div>

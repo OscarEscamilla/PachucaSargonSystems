@@ -66,7 +66,7 @@ class loginController{
                 //invalidar session y mostrar mensaje
                 
                 $_SESSION['login'] = 'fallido';
-                //header('Location:'.base_url.'login/index');
+                header('Location:'.base_url.'login/index');
                 
             }
             

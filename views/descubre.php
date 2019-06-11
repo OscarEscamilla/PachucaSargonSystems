@@ -2,7 +2,7 @@
  <div class="container m-nav">
 
 <!-- Page Heading/Breadcrumbs -->
-<h1 class="mt-4 mb-3 text-primary">¡Descubre
+<h1 class="mt-4 mb-3 text-primary text-s">¡Descubre
   <small>Lugares en Pachuca Hidalgo! </small>
 </h1>
 
@@ -10,121 +10,98 @@
   <li class="breadcrumb-item">
     <a href="index.html">Home</a>
   </li>
-  <li class="breadcrumb-item active">Descubre</li>
+  <li class="breadcrumb-item text-dark">Descubre</li>
 </ol>
 
 <div class="row mb-5">
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project One</a>
+          <a href="#">Hoteles</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+        <p class="card-text">Encuentra hoteles en Pachuca compara precios, servicio y decide en cual hospedarte. <br> </p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Two</a>
+          <a href="#">Restaurantes</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p class="card-text">Conoce la gastronomía del estado de Hidalgo y elige entre su variedad.        <br> <br>              </p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card  ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Three</a>
+          <a href="#">Escuelas</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+        <p class="card-text">¿Buscas donde estudiar? Localiza Universidades, Preparatorias y más... <br><br></p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Four</a>
+          <a href="#">Entretenimiento</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p class="card-text">Disfruta de cines, grupos deportivos, teatro en la ciudad de Pachuca. <br><br></p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Five</a>
+          <a href="#">Transportes</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p class="card-text">Encuentra rutas</p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Six</a>
+          <a href="#">Profesionistas</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+        <p class="card-text">¿Necesitas el servicio de un profesional? Encuentralo aqui y contactalo. <br><br></p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Seven</a>
+          <a href="#">Comercio</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p class="card-text">Todos los </p>
       </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
+    <div class="card ">
       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Eight</a>
+          <a href="#">Otros</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
+        <p class="card-text">Si no encontraste lo que buscabas, Buscalo en este apartado. <br><br></p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Pagination -->
-<ul class="pagination justify-content-center">
-  <li class="page-item">
-    <a class="page-link" href="#" aria-label="Previous">
-      <span aria-hidden="true">&laquo;</span>
-      <span class="sr-only">Previous</span>
-    </a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#">1</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#">2</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#">3</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#" aria-label="Next">
-      <span aria-hidden="true">&raquo;</span>
-      <span class="sr-only">Next</span>
-    </a>
-  </li>
-</ul>
+
