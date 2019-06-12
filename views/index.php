@@ -7,21 +7,21 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?php echo base_url;?>assets/img/reloj.jpg" class="d-block w-100 h-50" alt="...">
+          <img src="<?php echo base_url;?>assets/img/reloj.jpg" class="d-block  img-carousel" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="shadow">Monumental reloj de pachuca</h5>
             <p class="shadow">Ubicado en el centro de Pachuca Hidalgo</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url;?>assets/img/real_del_monte_hidalgo.jpg" class="d-block w-100  h-50" alt="...">
+          <img src="<?php echo base_url;?>assets/img/real_del_monte_hidalgo.jpg" class="d-block img-carousel" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url;?>assets/img/Pachuca_panoramio.jpg" class="d-block w-100  h-50" alt="...">
+          <img src="<?php echo base_url;?>assets/img/Pachuca_panoramio.jpg" class="d-block img-carousel" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="shadow">Third slide label</h5>
             <p  class="shadow">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

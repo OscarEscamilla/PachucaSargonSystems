@@ -9,11 +9,11 @@
         </h1>
       
 
-        <div class="tab">
-        <button class="tablinks btn nav-link" onclick="openCity(event, 'Ecoturismo')">Ecoturismo</button>
-        <button class="tablinks btn nav-link" onclick="openCity(event, 'Pueblos Magicos')">Pueblos Magicos</button>
-        <button class="tablinks btn nav-link" onclick="openCity(event, 'Haciendas')">Haciendas</button>
-        <button class="tablinks btn nav-link" onclick="openCity(event, 'Museos')">Museos</button>
+        <div class="tab mb-3">
+        <button class="tablinks btn " onclick="openCity(event, 'Ecoturismo')">Ecoturismo</button>
+        <button class="tablinks btn " onclick="openCity(event, 'Pueblos Magicos')">Pueblos Magicos</button>
+        <button class="tablinks btn " onclick="openCity(event, 'Haciendas')">Haciendas</button>
+        <button class="tablinks btn " onclick="openCity(event, 'Museos')">Museos</button>
         </div>
 
           <!-- ECOTURISMO -->
@@ -188,7 +188,7 @@
                     <div class="row">
                     <div class="col-lg-6">
                         <a href="#">
-                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/real_del_monte.jpg" alt="">
+                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/real_del_monte_hidalgo.jpg" alt="">
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -335,7 +335,7 @@
                     <div class="col-lg-6">
                         <h2 class="card-title">Hacienda San Juan Pueblilla Zempoala</h2>
                         <p class="card-text">Se encuentra ubicada sobre la carretera que va de Zempoala a Santa María Tecajete, pasando la vía a mano izquierda, la verá a pie de carretera. Es un casco de hacienda remodelado que data de finales del siglo XIX, en su tiempo era hacienda pulquera, actualmente se utiliza para organizar eventos, bodas, XV años y bautizos. Cuenta con amplios patios y jardín, capilla, estacionamiento y sanitarios.</p>
-                        <a target="_blank" href=https://www.google.com.mx/maps/place/Hacienda+San+Juan+Pueblilla/@19.9246177,-98.6546946,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1baa6e0fb8ba1:0x27ced92115fc730e!8m2!3d19.9246177!4d-98.6525059" class="btn btn-primary">Ir al Mapa &rarr;</a>
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Hacienda+San+Juan+Pueblilla/@19.9246177,-98.6546946,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1baa6e0fb8ba1:0x27ced92115fc730e!8m2!3d19.9246177!4d-98.6525059" class="btn btn-primary">Ir al Mapa &rarr;</a>
                     </div>
                     </div>
                 </div>
@@ -348,31 +348,121 @@
 
         <!-- MUSEOS -->
         <div id="Museos" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+            <!-- Blog Post -->
+            <div class="card mb-4 mt-4">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/museo_mineria.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="card-title">Museo de Mineria</h2>
+                        <p class="card-text">Su sede es un hermoso edificio de finales del siglo XIX que fuera el local de las Cajas de San Rafael. Cuenta con dos áreas de exposición, una biblioteca y hemeroteca pública, un laboratorio fotográfico, además de varias salas que ofrecen un panorama completo del desarrollo histórico de la minería argentífera en la región de Pachuca y Real del Monte. Mina No. 110 CP. 42000, Col. Centro, Pachuca.</p>
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Archivo+Hist%C3%B3rico+y+Museo+de+Miner%C3%ADa/@20.1253751,-98.7333997,17z/data=!3m1!4b1!4m5!3m4!1s0x85d109e6067e630b:0x1adb611be58ce323!8m2!3d20.1253751!4d-98.731211" class="btn btn-primary">Ir al Mapa &rarr;</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Blog Post -->
+            <div class="card mb-4 mt-4">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/rehilete.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="card-title">Museo del Rehilete</h2>
+                        <p class="card-text">Espacio para aprender divirtiéndose, está dividido en cinco salas: Ciencia, Arte, Tecnología, Más sobre Ciencia y Nuestro Mundo. Todas especialmente diseñadas para que los niños exploren, experimenten y descubran los principios básicos del saber científico y el arte. Carretera México-Pachuca Km. 84.5, Pachuca.</p>
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Museo+Interactivo+El+Rehilete/@20.0771033,-98.7794229,17z/data=!3m1!4b1!4m5!3m4!1s0x85d10a0bf3c63fbb:0x805ec5a81b497dae!8m2!3d20.0771033!4d-98.7772342" class="btn btn-primary">Ir al Mapa &rarr;</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Blog Post -->
+            <div class="card mb-4 mt-4">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/dino.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="card-title">Dinoparque</h2>
+                        <p class="card-text">Inaugurado el 23 de noviembre de 2009 se encuentra a un costado del Museo El Rehilete;7 en esta área de 9 mil metros cuadrados, se encuentran 42 diversas especies representadas y 30 fósiles, está dividido en 3 etapas, cretácico, jurásico y triásico</p>
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Dinoparque,+Blvd.+Felipe+%C3%81ngeles,+Venta+Prieta,+42083+Pachuca+de+Soto,+Hgo./@20.0773606,-98.7789902,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1a0ef43712c8b:0x276136f8f7de5398!8m2!3d20.0773958!4d-98.7767745" class="btn btn-primary">Ir al Mapa &rarr;</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Blog Post -->
+            <div class="card mb-4 mt-4">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/museo_religioso.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="card-title">Museo de Arte Religioso de Actopan</h2>
+                        <p class="card-text">Se encuentra ubicado en el claustro alto del Exconvento de San Nicolás; cuenta con cuatro salas de exposición permanente; el acervo del museo se compone de importantes manifestaciones artísticas de la época colonial del siglo XIX. Lerdo de Tejada s/n, Col. Centro, Actopan.</p>
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Iglesia+San+Nicol%C3%A1s+Tolentino/@20.2684596,-98.9453287,17z/data=!3m1!4b1!4m5!3m4!1s0x85d171eb17911d11:0xeee0af05c847bc07!8m2!3d20.2684596!4d-98.94314" class="btn btn-primary">Ir al Mapa &rarr;</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Blog Post -->
+            <div class="card mb-4 mt-4">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                        <img class="img-fluid rounded img-turi" src="<?php echo base_url;?>assets/img/museo_huasteco.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="card-title">Museo Popular Huasteco</h2>
+                        <p class="card-text">Muestra el modo de vida y costumbres de la cultura Huasteca, así como los aspectos más relevantes de su gastronomía y artesanías que pueden adquirirse en esta región. Municipio de Huejutla de Reyes.</p>
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Museo+de+Arte+Popular/@19.4339567,-99.1484547,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f8d544b5be9d:0x1da23d82c6aab38c!8m2!3d19.4339567!4d-99.146266" class="btn btn-primary">Ir al Mapa &rarr;</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+        <!--termina seccion de tabcontent -->
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <img src="<?php echo base_url;?>assets/img/dolores_hidalgo.jpg" alt="" class="w-100 mb-4">
+        <img src="<?php echo base_url;?>assets/img/dolores_hidalgo.jpg" alt="" class="banner-turismo mb-4">
     </div>
 </div>
 
 </div>
 <script>
     function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
     }
 </script>
  

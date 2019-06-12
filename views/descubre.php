@@ -16,7 +16,7 @@
 <div class="row mb-5">
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/hoteles.jpg" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Hoteles</a>
@@ -27,7 +27,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/restaurantes.jpg" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Restaurantes</a>
@@ -38,7 +38,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card  ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/escuelas.jpg" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Escuelas</a>
@@ -49,7 +49,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/entretenimiento.jpg" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Entretenimiento</a>
@@ -60,7 +60,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Transportes</a>
@@ -71,7 +71,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/profesionales.jpg" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Profesionistas</a>
@@ -82,7 +82,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Comercio</a>
@@ -93,7 +93,7 @@
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <a href="#"><img class="card-img-top cat" src="http://placehold.it/700x400" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">Otros</a>
