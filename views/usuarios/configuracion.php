@@ -27,16 +27,16 @@
                 <form action="<?php echo base_url;?>user/update" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="inputAddress">Nombre</label>
-                        <input type="text" name="nombre" value="<?php echo $_SESSION['usuario'][0]['nombre'];?>" class="form-control form-control-sm" id="inputAddress" placeholder="Nombre de la empresa">
+                        <input type="text" required="" name="nombre" value="<?php echo $_SESSION['usuario'][0]['nombre'];?>" class="form-control form-control-sm" id="inputAddress" placeholder="Nombre de la empresa">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" value="<?php echo $_SESSION['usuario'][0]['correo'];?>" name="correo" class="form-control form-control-sm" id="inputEmail4" placeholder="Email">
+                            <input type="email" required="" value="<?php echo $_SESSION['usuario'][0]['correo'];?>" name="correo" class="form-control form-control-sm" id="inputEmail4" placeholder="Email">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Telefono</label>
-                            <input type="text" value="<?php echo $_SESSION['usuario'][0]['telefono'];?>" name="telefono" class="form-control form-control-sm" id="inputPassword4" placeholder="Telefono">
+                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['telefono'];?>" name="telefono" class="form-control form-control-sm" id="inputPassword4" placeholder="Telefono">
                         </div>
                     </div>
                     <hr class="bg-primary">
@@ -45,28 +45,28 @@
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="inputCity">Calle</label>
-                            <input type="text" value="<?php echo $_SESSION['usuario'][0]['calle'];?>" name="calle" class="form-control form-control-sm"  placeholder="Calle">
+                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['calle'];?>" name="calle" class="form-control form-control-sm"  placeholder="Calle">
                             </div>
                             <div class="form-group col-md-4">
                             <label for="inputState">Colonia</label>
-                            <input type="text"  value="<?php echo $_SESSION['usuario'][0]['colonia'];?>"name="colonia" class="form-control form-control-sm"  placeholder="Colonia">
+                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['colonia'];?>"name="colonia" class="form-control form-control-sm"  placeholder="Colonia">
                         </div>
                         <div class="form-group col-md-4">
                         <label for="inputZip">Numero</label>
-                        <input type="text" name="numero" value="<?php echo $_SESSION['usuario'][0]['numero'];?>" class="form-control form-control-sm"  placeholder="Añada la url de su sitio web">
+                        <input type="text" required="" name="numero" value="<?php echo $_SESSION['usuario'][0]['numero'];?>" class="form-control form-control-sm"  placeholder="Añada la url de su sitio web">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group ">
                             <label for="inputState">Municipio</label>
-                            <input type="text"  value="<?php echo $_SESSION['usuario'][0]['municipio'];?>"name="municipio" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
+                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['municipio'];?>"name="municipio" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
                         </div>
     
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputState">Url <span class="text-info">Goole Maps</span></label>
-                            <input type="text"  value="<?php echo $_SESSION['usuario'][0]['maps_url'];?>"name="maps_url" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
+                            <label for="inputState">Url <span class="text-info"><a href="https://www.google.com.mx/maps">Goole Maps</a></span></label>
+                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['maps_url'];?>"name="maps_url" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
                         </div>
                         <div class="form-group col-md-6">
                         <label for="inputState">Url <span class="text-info">Sitio Web</span></label>
@@ -76,7 +76,7 @@
                     <hr class="bg-primary">
                     <div class="form-group">
                         <label for="inputAddress2">Descripcion</label>
-                       <textarea name="descripcion"  class="form-control" cols="30" rows="5"><?php echo $_SESSION['usuario'][0]['descripcion'];?></textarea>
+                       <textarea name="descripcion" required="" class="form-control" cols="30" rows="5"><?php echo $_SESSION['usuario'][0]['descripcion'];?></textarea>
                     </div>
                     <hr>
                     <h6>Imagenes</h6>
@@ -84,7 +84,7 @@
                             <div class="form-group col-md-6">
 
                                 <p>Logotipo</p>
-                                <input type="file" id="myFile" name="logo" class="btn btn-dark">
+                                <input required="" type="file" id="myFile" name="logo" class="btn btn-dark">
                             
                             </div>
                                 
@@ -92,7 +92,7 @@
                             <div class="form-group col-md-6">
                                 
                                 <p>Portada</p>
-                                <input type="file" id="myFile" name="portada" class="btn btn-dark">
+                                <input required="" type="file" id="myFile" name="portada" class="btn btn-dark">
                             </div>
                            
                         </div>

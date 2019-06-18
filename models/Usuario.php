@@ -243,7 +243,7 @@ class Usuario{
     public function update(){
         try {
             //$con = $this->db->connect();
-            $stmt = $this->con->prepare("INSERT INTO usuarios (nombre, correo, calle, colonia, numero, descripcion, telefono, logo, portada, sitio_web, maps_url, password, rol, categoria, municipio) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            $stmt = $this->con->prepare("UPDATE usuarios SET nombre=?, correo=?, calle=?, colonia=?, numero=?, descripcion=?, telefono=?, logo=?, portada=?, sitio_web=?, maps_url=?, rol=?, categoria=?, municipio=? WHERE id=?");
             $query = $stmt->execute([
                 $this->getNombre(),
                 $this->getCorreo(), 
@@ -261,8 +261,7 @@ class Usuario{
                 $this->getCategoria(),
                 $this->getMunicipio(), 
                 ]); # Pasar en el mismo orden de los ?
-            #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
-            #Con eso podemos evaluar
+           
         
             if ($query) {
                 return true;
