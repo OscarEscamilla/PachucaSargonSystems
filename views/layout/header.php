@@ -71,7 +71,7 @@
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="<?php echo base_url;?>user/logout">Cerrar Session</a>
+                <a class="dropdown-item" href="<?php echo base_url;?>user/logout">Cerrar Session<img src="<?php echo base_url;?>assets/img/icons/logout.svg" alt="" id="logout-icon"></a>
               </div>
             </div>
           <?php endif;?>

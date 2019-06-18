@@ -12,11 +12,12 @@
   <div class="row">
 
     <!-- Grid column -->
-    <div class="col-md-6 mt-md-0 mt-3">
+    <div class="col-md-6 mt-md-0 mt-3 p-5">
 
       <!-- Content -->
-      <h5 class="text-uppercase">Footer Content</h5>
-      <p>Here you can use rows and columns to organize your footer content.</p>
+      <a target="_blank" href="http://sargon.com.mx/v2/" class="text-white"> <h5 class="text-uppercase">Sargon Systems</h5></a>
+     
+      <p>Somos una compañía de Servicios en Tecnologías de Información, cuyo objetivo es ofrecer soluciones integrales que impulsen su negocio a niveles competitivos más altos al hacer uso de las tecnologías más recientes.</p>
 
     </div>
     <!-- Grid column -->

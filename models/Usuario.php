@@ -11,11 +11,10 @@ class Usuario{
     private $logo;
     private $maps_url;
     private $descripcion;
-    private $telefono1;
-    private $telefono2;
+    private $telefono;
     private $sitio_web;
     private $password;
-    private $banner;
+    private $portada;
     private $rol;
     private $categoria;
     private $municipio;
@@ -103,23 +102,13 @@ class Usuario{
         return $this->descripcion;
     }
 
-    public function setTelefono1($telefono1){
-        $this->telefono1 = $telefono1;
+    public function setTelefono($telefono){
+        $this->telefono1 = $telefono;
     }
     
-    public function getTelefono1(){
-        return $this->telefono1;
+    public function getTelefono(){
+        return $this->telefono;
     }
-
-
-    public function setTelefono2($telefono2){
-        $this->telefono2 = $telefono2;
-    }
-    
-    public function getTelefono2(){
-        return $this->telefono2;
-    }
-
     
     public function setSitio_web($sitio_web){
         $this->sitio_web = $sitio_web;
@@ -137,12 +126,12 @@ class Usuario{
         return $this->password;
     }
 
-    public function setBanner($banner){
-        $this->banner = $banner;
+    public function setPortada($portada){
+        $this->portada = $portada;
     }
     
-    public function getBanner(){
-        return $this->banner;
+    public function getPortada(){
+        return $this->portada;
     }
 
     public function setRol($rol){
@@ -179,7 +168,7 @@ class Usuario{
     public function save(){
         try {
             //$con = $this->db->connect();
-            $stmt = $this->con->prepare("INSERT INTO usuarios (nombre, correo, calle, colonia, numero, descripcion, telefono1, password, rol, categoria, municipio) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+            $stmt = $this->con->prepare("INSERT INTO usuarios (nombre, correo, calle, colonia, numero, descripcion, telefono, password, rol, categoria, municipio) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
             $query = $stmt->execute([
                 $this->getNombre(),
                 $this->getCorreo(), 
@@ -187,20 +176,22 @@ class Usuario{
                 $this->getColonia(),
                 $this->getNumero(),
                 $this->getDescripcion(),
-                $this->getTelefono1(),
+                $this->getTelefono(),
                 $this->getPassword(),
                 $this->getRol(),
                 $this->getCategoria(),
                 $this->getMunicipio(), 
                 ]); # Pasar en el mismo orden de los ?
             #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
-            #Con eso podemos evaluar
+     
         
             if ($query) {
                 return true;
+            }else{
+                return false;
             }
 
-            return false;
+         
 
         } catch (PDOException $e) {
             
@@ -245,6 +236,46 @@ class Usuario{
 
         }
        
+    }
+
+
+    public function update(){
+        try {
+            //$con = $this->db->connect();
+            $stmt = $this->con->prepare("INSERT INTO usuarios (nombre, correo, calle, colonia, numero, descripcion, telefono, logo, portada, sitio_web, maps_url, password, rol, categoria, municipio) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            $query = $stmt->execute([
+                $this->getNombre(),
+                $this->getCorreo(), 
+                $this->getCalle(),
+                $this->getColonia(),
+                $this->getNumero(),
+                $this->getDescripcion(),
+                $this->getTelefono(),
+                $this->getLogo(),
+                $this->getPortada(),
+                $this->getSitio_web(),
+                $this->getMaps_url(),
+                $this->getPassword(),
+                $this->getRol(),
+                $this->getCategoria(),
+                $this->getMunicipio(), 
+                ]); # Pasar en el mismo orden de los ?
+            #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
+            #Con eso podemos evaluar
+        
+            if ($query) {
+                return true;
+            }
+
+            return false;
+
+        } catch (PDOException $e) {
+            
+            $error = "email-duplicate";
+
+            return false;
+        }
+
     }
 
 

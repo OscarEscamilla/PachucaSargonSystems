@@ -24,7 +24,7 @@ class registroController{
         if(isset($_POST)){
             
             
-            //var_dump($_POST);
+            
             
             $this->modelUsuario->setNombre($_POST['nombre']);
             $this->modelUsuario->setCorreo($_POST['correo']);
@@ -33,7 +33,7 @@ class registroController{
             $this->modelUsuario->setNumero($_POST['numero']);
             $this->modelUsuario->setMunicipio($_POST['municipio']);
             $this->modelUsuario->setDescripcion($_POST['descripcion']);
-            $this->modelUsuario->setTelefono1($_POST['telefono1']);
+            $this->modelUsuario->setTelefono($_POST['telefono']);
             $this->modelUsuario->setPassword(md5($_POST['password']));
             $this->modelUsuario->setCategoria($_POST['categoria']);
 
@@ -52,7 +52,7 @@ class registroController{
             $_SESSION['registro'] = 'fallido';
            
         }
-
+      
         header('Location:'.base_url.'registro/index');
         
         
