@@ -103,7 +103,7 @@ class Usuario{
     }
 
     public function setTelefono($telefono){
-        $this->telefono1 = $telefono;
+        $this->telefono = $telefono;
     }
     
     public function getTelefono(){
@@ -183,7 +183,8 @@ class Usuario{
                 $this->getMunicipio(), 
                 ]); # Pasar en el mismo orden de los ?
             #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
-     
+                
+
         
             if ($query) {
                 return true;
