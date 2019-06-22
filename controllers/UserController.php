@@ -30,6 +30,9 @@ class userController{
                 $this->modelUsuario->setTelefono($_POST['telefono']);
                 $this->modelUsuario->setPassword(md5($_POST['password']));
                 $this->modelUsuario->setSitio_web($_POST['sitio_web']);
+                $this->modelUsuario->setRol($_SESSION['usuario'][0]['rol']);
+                $this->modelUsuario->setCategoria($_SESSION['usuario'][0]['categoria']);
+                $this->modelUsuario->setId($_SESSION['usuario'][0]['id']);
                 /*datos de logo img*/
                 $logo_file = $_FILES['logo'];
                 $logo_name = $logo_file['name'];
@@ -53,7 +56,9 @@ class userController{
                     $this->modelUsuario->setLogo(base_url.'uploads/logos/'.$logo_name);
                     $this->modelUsuario->setPortada(base_url.'uploads/portadas/'.$portada_name);
                     $save = $this->modelUsuario->update();
-                    if($save){
+                    echo '<br><br><br><br><br><br>';
+                    var_dump($save);
+                    if($save === 1){
                        
                         $_SESSION['update'] = true;
                         //echo "Registro completado!";
@@ -76,7 +81,7 @@ class userController{
             $_SESSION['update'] = '¡Error, Intentelo nuevamente!';
            
         }
-        header('Location:'.base_url.'user/config');
+        //header('Location:'.base_url.'user/config');
     }
     public function logout(){
         if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){

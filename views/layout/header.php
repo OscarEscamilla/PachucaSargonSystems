@@ -15,8 +15,7 @@
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url;?>assets/css/bootstrap_litera.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="<?php echo base_url;?>assets/css/modern-business.css" rel="stylesheet">
+ 
 
   <link href="<?php echo base_url;?>assets/css/style.css" rel="stylesheet">
 

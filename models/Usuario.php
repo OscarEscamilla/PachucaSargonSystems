@@ -256,24 +256,21 @@ class Usuario{
                 $this->getPortada(),
                 $this->getSitio_web(),
                 $this->getMaps_url(),
-                $this->getPassword(),
                 $this->getRol(),
                 $this->getCategoria(),
                 $this->getMunicipio(), 
+                $this->getId(), 
                 ]); # Pasar en el mismo orden de los ?
            
         
-            if ($query) {
-                return true;
-            }
-
-            return false;
+            $res = $query->rowCont();
+            return $res;
 
         } catch (PDOException $e) {
             
-            $error = "email-duplicate";
+            return $e->getMessage();
 
-            return false;
+            
         }
 
     }
