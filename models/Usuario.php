@@ -263,8 +263,8 @@ class Usuario{
                 ]); # Pasar en el mismo orden de los ?
            
         
-            $res = $query->rowCont();
-            return $res;
+           
+            return $query;
 
         } catch (PDOException $e) {
             
@@ -273,6 +273,39 @@ class Usuario{
             
         }
 
+    }
+
+     //LOGIN
+     public function getUser(){
+        try {
+        
+            $stmt = $this->con->prepare('SELECT * FROM usuarios WHERE id = :id');
+
+            $stmt->execute(['id' => $this->getId()]);
+
+            $resultado = $stmt->fetchAll();
+
+            
+         
+
+            if($resultado){//si existe un resultado lo recorremos y asignamos a las variables por su getter y setter
+
+                foreach ($resultado as $row) {
+                    $this->setRol($row['rol']);
+                    $this->setPassword($row['password']);
+                }
+                return $resultado;
+                
+            }
+
+        } catch (PDOException $e) {
+
+            echo "Error-002 model-usuario action-login".$e->getMessage();
+
+            
+
+        }
+       
     }
 
 

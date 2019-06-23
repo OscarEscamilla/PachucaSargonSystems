@@ -9,7 +9,7 @@
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <strong>¡Datos Actualizados!</a> 
             </div>
-        <?php elseif(isset($_SESSION['update']) && $_SESSION['config'] != true): ?>
+        <?php elseif(isset($_SESSION['update']) && $_SESSION['update'] != true): ?>
             <div class="alert alert-dismissible alert-danger">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <strong><?php echo $_SESSION['update']?></strong> 
@@ -66,7 +66,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputState">Url <span class="text-info"><a href="https://www.google.com.mx/maps">Goole Maps</a></span></label>
-                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['maps_url'];?>"name="maps_url" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
+                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['maps_url'];?>" name="maps_url" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
                         </div>
                         <div class="form-group col-md-6">
                         <label for="inputState">Url <span class="text-info">Sitio Web</span></label>
@@ -84,7 +84,7 @@
                             <div class="form-group col-md-6">
 
                                 <p>Logotipo</p>
-                                <input required="" type="file" id="myFile" name="logo" class="btn btn-dark">
+                                <input  type="file" id="myFile" name="logo" class="btn btn-dark">
                             
                             </div>
                                 
@@ -92,7 +92,7 @@
                             <div class="form-group col-md-6">
                                 
                                 <p>Portada</p>
-                                <input required="" type="file" id="myFile" name="portada" class="btn btn-dark">
+                                <input  type="file" id="myFile" name="portada" class="btn btn-dark">
                             </div>
                            
                         </div>

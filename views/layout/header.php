@@ -48,17 +48,27 @@
             <a class="nav-link" href="<?php echo base_url;?>contacto/index">Contacto</a>
           </li>
           <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'user'):?>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  <?php echo $_SESSION['usuario'][0][1] ?>
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="<?php echo base_url;?>user/index">Perfil</a>
-                  <a class="dropdown-item" href="<?php echo base_url;?>user/config">Configuracion</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="<?php echo base_url;?>user/logout">Cerrar Session</a>
-                </div>
-              </li>
+              <div class="btn-group ml-3">
+              <button type="button" class="btn btn-primary"> 
+              <?php if($_SESSION['usuario'][0]['logo'] != null):?>
+              <img src="<?php echo  $_SESSION['usuario'][0]['logo']; ?>" alt="" id="logo-user-nav">
+              <?php else:?>
+                <img src="<?php echo base_url;?>/assets/img/icons/user.svg" alt="" id="logo-user-nav"> 
+              <?php endif; ?>
+                
+                <?php echo $_SESSION['usuario'][0]['nombre']; ?>
+              </button>
+              <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="<?php echo base_url;?>user/config">Configuracion</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="<?php echo base_url;?>user/logout">Cerrar Session<img src="<?php echo base_url;?>assets/img/icons/logout.svg" alt="" id="logout-icon"></a>
+              </div>
+            </div>
           <?php elseif(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'): ?>
             <div class="btn-group ml-3">
               <button type="button" class="btn btn-primary">Admin</button>
