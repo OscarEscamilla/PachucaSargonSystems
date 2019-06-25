@@ -4,19 +4,14 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
     <!--evaluamos si el registro se comleto y mostramos alerta -->
-        <?php if(isset($_SESSION['registro']) && $_SESSION['registro'] == 'completado'):?>
-            <div class="alert alert-dismissible alert-success">
+        <?php if(isset($_SESSION['registro'])):?>
+            <div class="alert alert-dismissible <?php echo $_SESSION['registro'];?>">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>¡Registro Exitoso!</strong> <a href="<?php echo base_url;?>login/index" class="alert-link">iniciar session</a> 
+                <strong><?php echo $_SESSION['flash'];?></strong> 
             </div>
-        <?php elseif(isset($_SESSION['registro']) && $_SESSION['registro'] == 'fallido'): ?>
-            <div class="alert alert-dismissible alert-danger">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Oh!</strong>¡Registro Fallido!
-            </div>
-
         <?php endif; ?>
         <?php Utils::deleteSession('registro');?>
+        <?php Utils::deleteSession('flash');?>
 
         <div class="card mb-5">
             <div class="card-header">

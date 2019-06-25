@@ -22,37 +22,41 @@ class registroController{
 
     public function save(){
         if(isset($_POST)){
-            
-            
-            
-            
-            $this->modelUsuario->setNombre($_POST['nombre']);
-            $this->modelUsuario->setCorreo($_POST['correo']);
-            $this->modelUsuario->setCalle($_POST['calle']);
-            $this->modelUsuario->setColonia($_POST['colonia']);
-            $this->modelUsuario->setNumero($_POST['numero']);
-            $this->modelUsuario->setMunicipio($_POST['municipio']);
-            $this->modelUsuario->setDescripcion($_POST['descripcion']);
-            $this->modelUsuario->setTelefono($_POST['telefono']);
-            $this->modelUsuario->setPassword(md5($_POST['password']));
-            $this->modelUsuario->setCategoria($_POST['categoria']);
-            echo "<br><br><br><br><br><br><br><br><br>";
-            $save = $this->modelUsuario->save();
-            
-            //var_dump($save);
-           // die();
-            if($save){
-               
-                $_SESSION['registro'] = 'completado';
-                //echo "Registro completado!";
+            if($_POST['password'] == $_POST['confirmacion']){
+                 
+                $this->modelUsuario->setNombre($_POST['nombre']);
+                $this->modelUsuario->setCorreo($_POST['correo']);
+                $this->modelUsuario->setCalle($_POST['calle']);
+                $this->modelUsuario->setColonia($_POST['colonia']);
+                $this->modelUsuario->setNumero($_POST['numero']);
+                $this->modelUsuario->setMunicipio($_POST['municipio']);
+                $this->modelUsuario->setDescripcion($_POST['descripcion']);
+                $this->modelUsuario->setTelefono($_POST['telefono']);
+                $this->modelUsuario->setPassword(md5($_POST['password']));
+                $this->modelUsuario->setCategoria($_POST['categoria']);
+                echo "<br><br><br><br><br><br><br><br><br>";
+                $save = $this->modelUsuario->save();
+                
+                //var_dump($save);
+            // die();
+                if($save){
+                
+                    $_SESSION['registro'] = 'alert-success';
+                    $_SESSION['flash'] = 'Registro Exitoso';
+                    //echo "Registro completado!";
+                }else{
+
+                    $_SESSION['registro'] = 'alert-danger';
+                    $_SESSION['flash'] = 'Registro fallido';
+                    //echo "Registro fallido";
+                }
             }else{
-
-                $_SESSION['registro'] = 'fallido';
-                //echo "Registro fallido";
+                $_SESSION['registro'] = 'alert-danger';
+                $_SESSION['flash'] = 'Verifique que sus contraseñas coincidan';
             }
-
         }else{
-            $_SESSION['registro'] = 'fallido';
+            $_SESSION['registro'] = 'alert-danger';
+            $_SESSION['flash'] = 'Error intentelo nuevamente';
            
         }
       
