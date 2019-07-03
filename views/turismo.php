@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h1 class=" mb-3 text-primary">Turismo
+        <h1 class=" mb-3 text-primary"><span class="text-primary">► </span>Turismo
         <small>¡Adentrate en los lugares mas hermosos de Hidalgo!</small>
         </h1>
       
@@ -445,9 +445,15 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <img src="<?php echo base_url;?>assets/img/dolores_hidalgo.jpg" alt="" class="banner-turismo mb-4">
+    <img src="<?php echo base_url;?>assets/img/banners/Banner-World.jpg" alt="" id="banner-turismo">
     </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 </div>
 <script>

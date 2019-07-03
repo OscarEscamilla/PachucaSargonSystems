@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url;?>assets/css/bootstrap_litera.min.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Asap|Cabin+Condensed|Roboto+Condensed&display=swap" rel="stylesheet"> 
  
 
   <link href="<?php echo base_url;?>assets/css/style.css" rel="stylesheet">
@@ -42,10 +43,10 @@
             <a class="nav-link" href="<?php echo base_url;?>turismo/index">Turismo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Noticias</a>
+            <a class="nav-link" href="<?php echo base_url;?>noticias/index">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url;?>contacto/index">Contacto</a>
+            <a class="nav-link" href="<?php echo base_url;?>noticias/index">Contacto</a>
           </li>
           <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'user'):?>
               <div class="btn-group ml-3">
@@ -62,11 +63,10 @@
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
+              <a class="dropdown-item" href="<?php echo base_url;?>user/index">Mi perfil</a>
                 <a class="dropdown-item" href="<?php echo base_url;?>user/config">Configuracion</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="<?php echo base_url;?>user/logout">Cerrar Session<img src="<?php echo base_url;?>assets/img/icons/logout.svg" alt="" id="logout-icon"></a>
+                <a class="dropdown-item" href="<?php echo base_url;?>user/logout">Cerrar Sesion<img src="<?php echo base_url;?>assets/img/icons/logout.svg" alt="" id="logout-icon"></a>
               </div>
             </div>
           <?php elseif(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'): ?>

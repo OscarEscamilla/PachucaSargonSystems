@@ -8,8 +8,12 @@ class indexController{
         require_once 'views/index.php';
     }
 
-    public function contacto(){
-        require_once 'views/contacto.php';
+    public function banners_update(){
+
+        if($_POST){
+            
+        }
+        
     }
     
 }

@@ -2,7 +2,7 @@
   <div class="container m-nav">
  
  <!-- Page Heading/Breadcrumbs -->
- <h1 class="mt-4 mb-3 text-primary">Contacto
+ <h1 class="mt-4 mb-3 text-primary"><span class="text-primary">► </span>Contacto
       <small>¡Dejanos tu mensaje y nos pondremos en contacto contigo!</small>
     </h1>
 

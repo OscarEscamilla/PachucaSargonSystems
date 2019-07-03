@@ -1,12 +1,19 @@
 *{
-    font-family: 'Oswald', sans-serif !important;
-  
+    font-family:   'Cabin Condensed', sans-serif !important;
+
+
 }
 
 #body{
     margin: 0px;
     padding: 0px;
-    background-image: url('../img/cubes.png');
+    background-image: url('../img/cubes.png');/*
+    background: #1777CE;
+    background: #727B84;
+background: -moz-linear-gradient(45deg, #727B84 0%, #ECEFFF 96%, #FFFDFD 100%);
+background: -webkit-linear-gradient(45deg, #727B84 0%, #ECEFFF 96%, #FFFDFD 100%);
+background: linear-gradient(45deg, #727B84 0%, #ECEFFF 96%, #FFFDFD 100%);
+*/
     
 }
 
@@ -27,6 +34,21 @@
     width: 25px;
     border-radius: 20px !important;
     
+}
+
+#maps_logo{
+    height: 35px;
+    width: 35px;
+    margin: 0%;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    padding: 0%;
+}
+
+#global{
+    height: 24px;
+    width: 24px;
+
 }
 
 #portadas{
@@ -104,10 +126,25 @@ a{
     margin-bottom: 2px;
 }
 
+/*BANNERS PUBLICIDAD*/
+
+#banner-index{
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#banner-turismo{
+    width: 100%;
+    height: 400px;
+    padding-bottom: 30px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 
 
+/* MEDIA QUUERY */
 @media screen and (max-width: 600px) {
     #logo{
         height: 70px;
@@ -133,6 +170,20 @@ a{
         width: 100%;
         height: 200px !important;
     }
+    #portadas{
+        width: 100%;
+        height: 150px;
+    }
+    #logo-user{
+        height: 60px;
+        width: 60px;
+        border-radius: 43px !important;
+        
+    }
+
+    #nombre-perfil{
+        font-size: 30px !important;
+    }
     
 
   
@@ -141,10 +192,12 @@ a{
     
   }
 
+/* END MEDIA QUERY*/
+
   .navbar{
     -webkit-box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);
     -moz-box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);
-    box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);   
+    box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.62);    
   }
 
   
@@ -190,7 +243,9 @@ a{
     position: absolute !important;
 }
 
-
+.text-shadow{
+    text-shadow: 2px 1px 8px rgba(0, 0, 16, 1);
+}
 
 /* Style the tab */
 .tab {
@@ -256,3 +311,52 @@ a{
 .descripcion-in{
     height: 300px !important;
 }
+
+
+/* Estilos de sidebar admin*/
+
+#mySidenav{
+    margin-top: 40px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3771ce;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* end estilos de sidebar admin*/

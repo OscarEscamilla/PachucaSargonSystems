@@ -32,7 +32,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" required="" value="<?php echo $_SESSION['usuario'][0]['correo'];?>" name="correo" class="form-control form-control-sm" id="inputEmail4" placeholder="Email">
+                            <input type="email" required="" readonly value="<?php echo $_SESSION['usuario'][0]['correo'];?>" name="correo" class="form-control form-control-sm" id="inputEmail4" placeholder="Email">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Telefono</label>

@@ -13,6 +13,7 @@
     
     <h1 class="mt-4 mb-3 text-primary">
         <!-- Preview Image -->
+        <p id="nombre-perfil" class>
         <?php if($_SESSION['usuario'][0]['logo'] != null && $_SESSION['usuario'][0]['logo'] != ''):?>
           <img class="img-fluid rounded" src="<?php echo $_SESSION['usuario'][0]['logo']?> " alt="" id="logo-user">
         <?php else:?>
@@ -20,7 +21,7 @@
 
         <?php endif; ?>
    
-    <?php echo $_SESSION['usuario'][0]['nombre'];?> <!-- Nombre de la empresa-->
+         <?php echo $_SESSION['usuario'][0]['nombre'];?> <!-- Nombre de la empresa--></p>
     </h1>
 
    
@@ -57,7 +58,7 @@
 
         <!-- Search Widget -->
         <div class="card mb-4">
-          <h5 class="card-header text-primary">¿Como llegar?</h5>
+          <h5 class="card-header text-primary">¿Como llegar?<img src="<?php echo base_url;?>assets/img/icons/map.svg" alt="" id="maps_logo"></h5>
           <div class="card-body">
             <p class="text-capitalize">Calle: <?php echo $_SESSION['usuario'][0]['calle']?></p>
             <p class="text-capitalize">Colonia: <?php echo $_SESSION['usuario'][0]['colonia']?></p>
@@ -72,32 +73,19 @@
 
         <!-- Categories Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
+          <h5 class="card-header text-primary">Contacto</h5>
           <div class="card-body">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="<?php echo base_url;?>user/logout">logout</a>
+                    <p><img src="<?php echo base_url;?>assets/img/icons/phone.svg" class="mr-3" alt=""><span class="text-primary">Telefono:</span>  <?php echo $_SESSION['usuario'][0]['telefono']?></p>
                   </li>
                   <li>
-                    <a href="#">HTML</a>
+                    <p><img src="<?php echo base_url;?>assets/img/icons/email.svg" class="mr-3" alt=""><span class="text-primary">Correo:</span> <?php echo $_SESSION['usuario'][0]['correo']?></p>
                   </li>
                   <li>
-                    <a href="#">Freebies</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Tutorials</a>
+                    <p><img src="<?php echo base_url;?>assets/img/icons/global.svg" class="mr-3" id="global" alt=""><span class="text-primary">Sitio Web:</span> <a target="_blank" href="<?php echo $_SESSION['usuario'][0]['sitio_web']?>"><?php echo $_SESSION['usuario'][0]['sitio_web']?></a></p> 
                   </li>
                 </ul>
               </div>
