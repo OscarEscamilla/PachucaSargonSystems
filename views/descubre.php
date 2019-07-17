@@ -15,15 +15,17 @@
 
 <div class="row mb-5">
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card ">
-      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/hoteles.jpg" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#" class="text-info">Hoteles</a>
-        </h4>
-        <p class="card-text">Encuentra hoteles en Pachuca compara precios, servicio y decide en cual hospedarte. <br> <br></p>
+    <a href="<?php echo base_url;?>descubre/show_cat?cat=entretenimiento">
+      <div class="card ">
+        <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/hoteles.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#" class="text-info">Hoteles</a>
+          </h4>
+          <p class="card-text">Encuentra hoteles en Pachuca compara precios, servicio y decide en cual hospedarte. <br> <br></p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
     <div class="card ">
@@ -48,15 +50,17 @@
     </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-    <div class="card ">
-      <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/entretenimiento.jpg" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#" class="text-info">Entretenimiento</a>
-        </h4>
-        <p class="card-text">Disfruta de cines, grupos deportivos, teatro en la ciudad de Pachuca. <br><br></p>
+    <a href="<?php echo base_url;?>descubre/show_cat?cat=entretenimiento">
+      <div class="card ">
+        <a href="#"><img class="card-img-top cat" src="<?php echo base_url;?>assets/img/images_cat/entretenimiento.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#" class="text-info">Entretenimiento</a>
+          </h4>
+          <p class="card-text">Disfruta de cines, grupos deportivos, teatro en la ciudad de Pachuca. <br><br></p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
     <div class="card ">

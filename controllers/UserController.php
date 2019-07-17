@@ -49,7 +49,7 @@ class userController{
                             mkdir('uploads/portadas', 0777, true);//pasamos parametro true para crear uno dentro de otro
                         }
 
-                        $error = 0;
+                      
 
                         if(isset($_FILES['logo'])){
                             $logo_file = $_FILES['logo'];
@@ -60,7 +60,7 @@ class userController{
                             
                                 move_uploaded_file($logo_file['tmp_name'], 'uploads/logos/'.$logo_name);
 
-                                $this->modelUsuario->setLogo(base_url.'uploads/logos/'.$logo_name);
+                                $this->modelUsuario->setLogo('uploads/logos/'.$logo_name);
                             }elseif($logo_type == ''){
                                 if ($_SESSION['usuario'][0]['logo'] == null || $_SESSION['usuario'][0]['logo'] == '') {
                                     $this->modelUsuario->setLogo('');
@@ -95,8 +95,10 @@ class userController{
                             $portada_type = $portada_file['type'];
                             /*validacion de portada*/
                             if($portada_type == 'image/jpg' || $portada_type == 'image/jpeg' || $portada_type == 'image/png' || $portada_type == 'image/gif'){
+
                                 move_uploaded_file($portada_file['tmp_name'], 'uploads/portadas/'.$portada_name);
-                                $this->modelUsuario->setPortada(base_url.'uploads/portadas/'.$portada_name);
+                                $this->modelUsuario->setPortada('uploads/portadas/'.$portada_name);
+
                             }elseif($portada_type == ''){
                                 if ($_SESSION['usuario'][0]['portada'] == null || $_SESSION['usuario'][0]['portada'] == '') {
                                     $this->modelUsuario->setPortada('');
@@ -178,5 +180,10 @@ class userController{
             header('Location:'.base_url);
         }
     }
+
+
+   
     
 }
+
+

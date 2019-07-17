@@ -52,7 +52,7 @@
               <div class="btn-group ml-3">
               <button type="button" class="btn btn-primary"> 
               <?php if($_SESSION['usuario'][0]['logo'] != null):?>
-              <img src="<?php echo  $_SESSION['usuario'][0]['logo']; ?>" alt="" id="logo-user-nav">
+              <img src="<?php echo  base_url.$_SESSION['usuario'][0]['logo']; ?>" alt="" id="logo-user-nav">
               <?php else:?>
                 <img src="<?php echo base_url;?>/assets/img/icons/user.svg" alt="" id="logo-user-nav"> 
               <?php endif; ?>

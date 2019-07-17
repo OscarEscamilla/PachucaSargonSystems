@@ -15,7 +15,7 @@
         <!-- Preview Image -->
         <p id="nombre-perfil" class>
         <?php if($_SESSION['usuario'][0]['logo'] != null && $_SESSION['usuario'][0]['logo'] != ''):?>
-          <img class="img-fluid rounded" src="<?php echo $_SESSION['usuario'][0]['logo']?> " alt="" id="logo-user">
+          <img class="img-fluid rounded" src="<?php echo base_url.$_SESSION['usuario'][0]['logo']?> " alt="" id="logo-user">
         <?php else:?>
           <img src="<?php echo base_url;?>/assets/img/icons/user.svg" alt="" id="logo-user"> 
 
@@ -34,7 +34,7 @@
 
         <!-- Preview Image -->
         <?php if($_SESSION['usuario'][0]['portada'] != null):?>
-          <img class="img-fluid rounded" src="<?php echo $_SESSION['usuario'][0]['portada']?> " alt="" id="portadas">
+          <img class="img-fluid rounded" src="<?php echo base_url.$_SESSION['usuario'][0]['portada']?>" alt="" id="portadas">
         <?php else:?>
           <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
 
