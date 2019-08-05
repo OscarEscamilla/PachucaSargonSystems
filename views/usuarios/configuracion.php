@@ -66,7 +66,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputState">Url <span class="text-info"><a href="https://www.google.com.mx/maps">Goole Maps</a></span></label>
-                            <input type="text" required="" value="<?php echo $_SESSION['usuario'][0]['maps_url'];?>" name="maps_url" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
+                            <input type="text"  value="<?php echo $_SESSION['usuario'][0]['maps_url'];?>" name="maps_url" class="form-control form-control-sm"  placeholder="Añada la url de su ubicacion en Google Maps">
                         </div>
                         <div class="form-group col-md-6">
                         <label for="inputState">Url <span class="text-info">Sitio Web</span></label>

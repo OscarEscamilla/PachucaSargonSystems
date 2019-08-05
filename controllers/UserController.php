@@ -1,24 +1,31 @@
 <?php
+
 require_once 'models/Usuario.php';
+
 class userController{
+
     protected $modelUsuario;
     public function __construct(){
         
         $this->modelUsuario = new Usuario();
     }
+
     public function index(){
         Utils::isUser();
         require_once 'views/usuarios/panel_user.php';
         
     }
+
     public function config(){
         Utils::isUser();
         require_once 'views/usuarios/configuracion.php';
         
     }
+
     public function update(){
         Utils::isUser();
         if(isset($_POST)){
+
                 if(md5($_POST['password']) === $_SESSION['usuario'][0]['password']){
 
                 
@@ -173,6 +180,7 @@ class userController{
         
         //header('Location:'.base_url.'user/config');
     }
+    
     public function logout(){
         if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){
             unset($_SESSION['usuario']);

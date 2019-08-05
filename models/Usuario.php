@@ -16,6 +16,7 @@ class Usuario{
     private $password;
     private $portada;
     private $rol;
+    private $estado;
     private $categoria;
     private $municipio;
 
@@ -142,6 +143,14 @@ class Usuario{
         return $this->rol;
     }
 
+    public function setEstado($estado){
+        $this->estado = $estado;
+    }  
+    
+    public function getEstado(){
+        return $this->estado;
+    }
+
     public function setCategoria($categoria){
         $this->categoria = $categoria;
     }
@@ -181,6 +190,7 @@ class Usuario{
                 $this->getRol(),
                 $this->getCategoria(),
                 $this->getMunicipio(), 
+              
                 ]); # Pasar en el mismo orden de los ?
             #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
                 
@@ -306,6 +316,39 @@ class Usuario{
 
         }
        
+    }
+
+
+    public function getForcategoria(){
+        try {
+        
+            $stmt = $this->con->prepare('SELECT * FROM usuarios WHERE categoria = :categoria AND estado = :estado');
+
+            $stmt->execute(['categoria' => $this->getCategoria(), 'estado' => $this->getEstado()]);
+
+            $resultado = $stmt->fetchAll();
+
+            
+         
+
+            if($resultado){//si existe un resultado lo recorremos y asignamos a las variables por su getter y setter
+                /*
+                foreach ($resultado as $row) {
+                    $this->setRol($row['rol']);
+                    $this->setPassword($row['password']);
+                }
+                */
+                return $resultado;
+                
+            }
+
+        } catch (PDOException $e) {
+
+            echo "Error-002 model-usuario action-login".$e->getMessage();
+
+            
+
+        }
     }
 
 

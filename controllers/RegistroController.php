@@ -34,6 +34,7 @@ class registroController{
                 $this->modelUsuario->setTelefono($_POST['telefono']);
                 $this->modelUsuario->setPassword(md5($_POST['password']));
                 $this->modelUsuario->setCategoria($_POST['categoria']);
+                
                 echo "<br><br><br><br><br><br><br><br><br>";
                 $save = $this->modelUsuario->save();
                 

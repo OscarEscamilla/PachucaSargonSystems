@@ -123,6 +123,10 @@
       <p><span class="text-info">■ </span>A la ciudad de Pachuca, le fue agregada la denominación «de Soto» en reconocimiento de Manuel Fernando Soto, originario de la ciudad de Tulancingo y quien es considerado el más importante impulsor en la creación del estado.</p>  
       <p><span class="text-info">■ </span>El escudo oficial del Estado Libre y Soberano de Hidalgo fue diseñado por Diego Rivera e ideado por José Vasconcelos en el año de 1922.</p>
      </div>
+     <br>
+     <br>
+     <br>
+     <br>
     </div>
     <!-- /.row -->
     

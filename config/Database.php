@@ -5,7 +5,7 @@ class Database{
     public static function connect(){
         try{
               //variable que almacena todo un string con los parametros de conexion
-            $connection = "mysql:host=localhost;dbname=sargon;charset=utf8mb4";
+            $connection = "mysql:host=localhost;dbname=sargon_final;charset=utf8mb4";
               //opciones para devolver mensajes de error con descripcion
             $options = [
                 PDO::ATTR_ERRMODE           => PDO::ERRMODE_EXCEPTION,

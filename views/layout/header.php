@@ -46,7 +46,7 @@
             <a class="nav-link" href="<?php echo base_url;?>noticias/index">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url;?>noticias/index">Contacto</a>
+            <a class="nav-link" href="<?php echo base_url;?>contacto/index">Contacto</a>
           </li>
           <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'user'):?>
               <div class="btn-group ml-3">

@@ -28,20 +28,20 @@
     <div class="col-md-3 mb-md-0 mb-3">
 
       <!-- Links -->
-      <h5 class="text-uppercase">Links</h5>
+      <h5 class="text-uppercase">Conoce</h5>
 
       <ul class="list-unstyled ">
         <li>
-          <a class="text-white"href="#!">Link 1</a>
+          <a class="text-white"href="<?php echo base_url;?>descubre/show_cat&cat=hoteles">Hoteles</a>
         </li>
         <li>
-          <a class="text-white" href="#!">Link 2</a>
+          <a class="text-white" href="<?php echo base_url;?>descubre/show_cat&cat=restaurantes">Restaurantes</a>
         </li>
         <li>
-          <a class="text-white" href="#!">Link 3</a>
+          <a class="text-white" href="<?php echo base_url;?>descubre/show_cat&cat=escuelas">Escuelas</a>
         </li>
         <li>
-          <a class="text-white" href="#!">Link 4</a>
+          <a class="text-white" href="<?php echo base_url;?>descubre/show_cat&cat=profesionistas">Profesionistas</a>
         </li>
       </ul>
 
@@ -52,20 +52,20 @@
     <div class="col-md-3 mb-md-0 mb-3">
 
       <!-- Links -->
-      <h5 class="text-uppercase">Links</h5>
+      <h5 class="text-uppercase">Pachuca</h5>
 
       <ul class="list-unstyled">
         <li>
-          <a class="text-white" href="#!">Link 1</a>
+          <a class="text-white" href="<?php echo base_url;?>">Home</a>
         </li>
         <li>
-          <a class="text-white" href="#!">Link 2</a>
+          <a class="text-white" href="<?php echo base_url;?>descubre/index">Descubre</a>
         </li>
         <li>
-          <a class="text-white" href="#!">Link 3</a>
+          <a class="text-white" href="<?php echo base_url;?>turismo/index">Turismo</a>
         </li>
         <li>
-          <a class="text-white" href="#!">Link 4</a>
+          <a class="text-white" href="<?php echo base_url;?>noticias/index">Noticias</a>
         </li>
       </ul>
 

@@ -28,10 +28,9 @@
 
 
     <div class="row">
-
       <!-- Post Content Column -->
       <div class="col-lg-8">
-
+        
         <!-- Preview Image -->
         <?php if($_SESSION['usuario'][0]['portada'] != null):?>
           <img class="img-fluid rounded" src="<?php echo base_url.$_SESSION['usuario'][0]['portada']?>" alt="" id="portadas">
