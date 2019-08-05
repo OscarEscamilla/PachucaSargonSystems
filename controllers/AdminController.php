@@ -30,8 +30,6 @@ class adminController{
             $banner_type = $banner_file['type'];
 
             if ($banner_type == 'image/jpg' || $banner_type == 'image/jpeg' || $banner_type == 'image/png' || $banner_type == 'image/gif'){
-                            
-               
 
                 if( move_uploaded_file($banner_file['tmp_name'], 'uploads/banners/'.$banner_name)){
                     $this->modelBanners->getBanner();
@@ -40,9 +38,7 @@ class adminController{
 
                     unlink($ruta_delete);
                     
-                }
-
-    
+                }    
                 $this->modelBanners->setPath('uploads/banners/'.$banner_name);
 
                 $banner  = $this->modelBanners->updateBanner();

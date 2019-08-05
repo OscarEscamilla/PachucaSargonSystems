@@ -444,10 +444,40 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-12">
-    <img src="<?php echo base_url;?>assets/img/banners/Banner-World.jpg" alt="" id="banner-turismo">
-    </div>
+    
+        <div class="col-md-6 mr-0 pr-1">
+            <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
+            <form action="<?php echo base_url;?>turismo/banner_update_left" method="post" enctype="multipart/form-data">
+                <div class="form-group col-md-6">
+                    <p class="text-primary">Banner Izquierda</p>
+                    <input  type="file" id="myFile" name="banner_left" class="btn btn-dark">
+                </div>
+                <div class="form-group col-md-6">
+                <button class="btn btn-success">Actualizar</button>
+                </div>
+            
+            </form>
+            <?php endif;?>
+        <img src="<?php echo base_url.$banners[1]['path']; ?>" alt="" id="banner-index">
+        
+      </div>
+      <div class="col-md-6 ml-0 pl-1">
+        <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
+          <form action="<?php echo base_url;?>turismo/banner_update_rigth" method="post" enctype="multipart/form-data">
+            <div class="form-group col-md-6">
+                <p class="text-primary">Banner Derecho</p>
+                <input  type="file" id="myFile" name="banner_rigth" class="btn btn-dark">
+            </div>
+            <div class="form-group col-md-6">
+             <button class="btn btn-success">Actualizar</button>
+            </div>
+          </form>
+        <?php endif;?>
+        <img src="<?php echo base_url.$banners[0]['path']; ?>" alt="" id="banner-index">
+      </div>
+    
 </div>
+<!--end row-->
 <br>
 <br>
 <br>

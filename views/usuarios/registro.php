@@ -74,11 +74,11 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputCity">Contraseña</label>
-                                <input type="text" name="password" class="form-control form-control-sm" id="inputCity" placeholder="Password">
+                                <input type="password" name="password" class="form-control form-control-sm" id="inputCity" placeholder="Password">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputState">Confirme de Contraseña</label>
-                                <input type="text" name="confirmacion"  class="form-control form-control-sm" id="inputCity" placeholder="Password">
+                                <input type="password" name="confirmacion"  class="form-control form-control-sm" id="inputCity" placeholder="Password">
                             </div>
                         </div>
                     </div>
