@@ -1,61 +1,30 @@
   <!-- Page Content -->
+  <?php foreach ($result as $row):?> 
+      
+      <?php endforeach; ?>
   <div class="container m-nav">
 
     <!-- Page Heading/Breadcrumbs -->
     <!--evaluamos si el registro se comleto y mostramos alerta -->
     
-    
-    <?php foreach ($result as $row):?> 
-      
-    <?php endforeach; ?>
-  
-    <h1 class="mt-4 mb-3 text-primary">
-        <!-- Preview Image -->
-        <p id="nombre-perfil" class>
-        <?php if($row['logo'] != null && $row['logo'] != ''):?>
-          <img class="img-fluid rounded" src="<?php echo base_url.$row['logo']?> " alt="" id="logo-user">
-        <?php else:?>
-          <img src="<?php echo base_url;?>/assets/img/icons/user.svg" alt="" id="logo-user"> 
-
-        <?php endif; ?>
-   
-         <?php echo $row['nombre'];?> <!-- Nombre de la empresa--></p>
-    </h1>
-
-   
-
-
     <div class="row">
-      <!-- Post Content Column -->
-      <div class="col-lg-8">
-        
-        <!-- Preview Image -->
-        <?php if($row['portada'] != null):?>
-          <img class="img-fluid rounded" src="<?php echo base_url.$row['portada']?>" alt="" id="portadas">
-        <?php else:?>
-          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+      <div class="col-md-3">
 
-        <?php endif; ?>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="">
+            <p id="nombre-perfil" class>
+            <?php if($row['logo'] != null && $row['logo'] != ''):?>
+              <img class="img-fluid rounded" src="<?php echo base_url.$row['logo']?> " alt="" id="logo-user">
+            <?php else:?>
+              <img src="<?php echo base_url;?>/assets/img/icons/user.svg" alt="" id="logo-user"> 
 
-        
-        
-        <hr>
-        <!-- Descripcion -->
-        <p class="text-justify"><?php echo $row['descripcion'];?></p>
-
-        <hr>
-
-
-        
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
-        <div class="card mb-4">
-          <h5 class="card-header text-primary">¿Como llegar?<img src="<?php echo base_url;?>assets/img/icons/map.svg" alt="" id="maps_logo"></h5>
+            <?php endif; ?>
+            
+            <?php echo $row['nombre'];?> <!-- Nombre de la empresa--></p>
+            </h3>
+            
+          </div>
           <div class="card-body">
             <p class="text-capitalize">Calle: <?php echo $row['calle']?></p>
             <p class="text-capitalize">Colonia: <?php echo $row['colonia']?></p>
@@ -64,13 +33,13 @@
             <?php if($row['maps_url'] != ''):?>
               <a target="_blank" href="<?php echo $row['maps_url']?>">Ir a la Ubicacion</a>
             <?php endif; ?>
-           
           </div>
         </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header text-primary">Contacto</h5>
+          
+        <div class="card mt-3">
+          <div class="card-header">
+            ¿Como llegar?<img src="<?php echo base_url;?>assets/img/icons/map.svg" alt="" id="maps_logo">
+          </div>
           <div class="card-body">
             <div class="row">
               <div class="col-lg-12">
@@ -89,20 +58,22 @@
             </div>
           </div>
         </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
       </div>
-      
+      <div class="col-md-9">
+         <!-- Preview Image -->
+         <?php if($row['portada'] != null):?>
+          <img class="img-fluid rounded" src="<?php echo base_url.$row['portada']?>" alt="" id="portadas">
+        <?php else:?>
+          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
 
+        <?php endif; ?>
+
+        <br>
+        <p class="text-justify mt-4">
+        <?php echo $row['descripcion'] ?>
+        </p>
+       
+      </div>
     </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
+    
+   

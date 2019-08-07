@@ -10,7 +10,7 @@
           <img src="<?php echo base_url;?>assets/img/reloj.jpg" class="d-block  img-carousel" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-shadow">Monumental Reloj de Pachuca</h5>
-            <p class="text-shadow">Ubicado en el centro de Pachuca Hidalgo</p>
+            <p class="text-shadow">El Reloj Monumental de Pachuca, también comúnmente conocido con el nombre de Reloj de Pachuca, es un reloj de torre ubicado en la ciudad de Pachuca de Soto, en el estado de Hidalgo, México.</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -25,7 +25,7 @@
         <div class="carousel-item">
           <img src="<?php echo base_url;?>assets/img/Pachuca_panoramio.jpg" class="d-block img-carousel" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-shadow">Third slide label</h5>
+            <h5 class="text-shadow">Paranomio</h5>
             <p  class="text-shadow">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </div>
         </div>
@@ -66,7 +66,7 @@
     <hr>
     
     <div class="row">
-      <div class="col-md-6 mr-0 pr-1">
+      <div class="col-md-6 mr-0 pr-3 pt-3">
         <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
           <form action="<?php echo base_url;?>admin/banner_update_left" method="post" enctype="multipart/form-data">
             <div class="form-group col-md-6">
@@ -82,7 +82,7 @@
         <img src="<?php echo $banners[1]['path']; ?>" alt="" id="banner-index">
         
       </div>
-      <div class="col-md-6 ml-0 pl-1">
+      <div class="col-md-6 ml-0 pl-3 pt-3">
         <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
           <form action="<?php echo base_url;?>admin/banner_update_rigth" method="post" enctype="multipart/form-data">
             <div class="form-group col-md-6">

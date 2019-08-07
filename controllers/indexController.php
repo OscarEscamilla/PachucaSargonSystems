@@ -9,6 +9,8 @@ class indexController{
     public function __construct(){
  
         $this->modelBanners = new Banners_index();
+
+       
     }
 
 

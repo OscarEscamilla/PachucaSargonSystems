@@ -21,16 +21,16 @@
                 <form action="<?php echo base_url;?>registro/save" method="POST">
                     <div class="form-group">
                         <label for="inputAddress">Nombre</label>
-                        <input type="text" name="nombre" class="form-control form-control-sm" id="inputAddress" placeholder="Nombre de la empresa">
+                        <input type="text" name="nombre" class="form-control form-control-sm" id="inputAddress" placeholder="Nombre de la empresa" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" name="correo" class="form-control form-control-sm" id="inputEmail4" placeholder="Email">
+                            <input type="email" name="correo" class="form-control form-control-sm" id="inputEmail4" placeholder="Email"  required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Telefono</label>
-                            <input type="text" name="telefono" class="form-control form-control-sm" id="inputPassword4" placeholder="Telefono">
+                            <input type="text" name="telefono" class="form-control form-control-sm" id="inputPassword4" placeholder="Telefono"  required>
                         </div>
                     </div>
                     <h6>Direccion</h6>
@@ -38,24 +38,24 @@
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="inputCity">Calle</label>
-                            <input type="text" name="calle" class="form-control form-control-sm" id="inputCity" placeholder="Calle">
+                            <input type="text" name="calle" class="form-control form-control-sm" id="inputCity" placeholder="Calle"  required>
                             </div>
                             <div class="form-group col-md-4">
                             <label for="inputState">Colonia</label>
-                            <input type="text"  name="colonia" class="form-control form-control-sm" id="inputCity" placeholder="Colonia">
+                            <input type="text"  name="colonia" class="form-control form-control-sm" id="inputCity" placeholder="Colonia"  required>
                         </div>
                         <div class="form-group col-md-4">
                         <label for="inputZip">Numero</label>
-                        <input type="text" name="numero" class="form-control form-control-sm" id="inputZip" placeholder="Numero">
+                        <input type="text" name="numero" class="form-control form-control-sm" id="inputZip" placeholder="Numero"  required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Municipio</label>
-                        <input type="text" name="municipio"  class="form-control form-control-sm" id="inputAddress2" placeholder="Municipio">
+                        <input type="text" name="municipio"  class="form-control form-control-sm" id="inputAddress2" placeholder="Municipio"  required>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Descripcion</label>
-                        <textarea name="descripcion" id="" cols="30" rows="5" class="form-control" placeholder="Añanada una descripcion de su empresa y servicios que ofrece"></textarea>
+                        <textarea name="descripcion" id="" cols="30" rows="5" class="form-control" placeholder="Añanada una descripcion de su empresa y servicios que ofrece"  required></textarea>
                     </div>
                     <div class="form-row">
                             <div class="form-group col-md-4">
@@ -74,11 +74,11 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputCity">Contraseña</label>
-                                <input type="password" name="password" class="form-control form-control-sm" id="inputCity" placeholder="Password">
+                                <input type="password" name="password" class="form-control form-control-sm" id="inputCity" placeholder="Password"  required>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputState">Confirme de Contraseña</label>
-                                <input type="password" name="confirmacion"  class="form-control form-control-sm" id="inputCity" placeholder="Password">
+                                <input type="password" name="confirmacion"  class="form-control form-control-sm" id="inputCity" placeholder="Password"  required>
                             </div>
                         </div>
                     </div>

@@ -360,3 +360,7 @@ a{
   }
 
   /* end estilos de sidebar admin*/
+
+  .dropdown-item:hover{
+    background-color: #3771ce;
+  }

@@ -13,9 +13,11 @@
   <!-- Icons css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
-  <link href="<?php echo base_url;?>assets/css/bootstrap_litera.min.css" rel="stylesheet">
+  <link href="<?php echo base_url;?>assets/css/bootstrap.min(1).css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Asap|Cabin+Condensed|Roboto+Condensed&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  
 
   <link href="<?php echo base_url;?>assets/css/style.css" rel="stylesheet">
@@ -71,7 +73,7 @@
             </div>
           <?php elseif(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'): ?>
             <div class="btn-group ml-3">
-              <button type="button" class="btn btn-primary">Admin</button>
+              <button type="button" class="btn btn-primary"><img src="<?php echo base_url;?>/assets/img/icons/user.svg" alt="" id="logo-user-nav">   Admin</button>
               <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
