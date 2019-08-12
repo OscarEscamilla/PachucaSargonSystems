@@ -61,8 +61,8 @@
           <abbr title="Phone">P</abbr>: (123) 456-7890
         </p>
         <p>
-          <abbr title="Email">Correo</abbr>:
-          <a href="mailto:name@example.com">name@example.com
+          <abbr title="Email" class="text-primary">Correo</abbr>:
+          <a href="mailto:name@example.com">informes@pachuca.com.mx
           </a>
         </p>
         <p>

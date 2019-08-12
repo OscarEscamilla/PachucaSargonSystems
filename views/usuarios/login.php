@@ -17,6 +17,7 @@
             <div class="card-body">
                 <form action="<?php echo base_url;?>login/log" method="POST" >
                     <div class="input-group pb-4">
+                        
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
                         </div>
@@ -27,7 +28,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-car"></i></span>
                         </div>
-                        <input type="password" name="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     
                     <div class="form-group mb-4">

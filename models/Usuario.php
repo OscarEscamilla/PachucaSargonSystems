@@ -168,6 +168,25 @@ class Usuario{
     }
 
     //END GETTERS AND SETTERS
+    
+    public function getAll(){
+        try {
+
+            $sql = 'SELECT * FROM usuarios';
+
+            $result = $this->con->query($sql);
+            return $result;
+
+
+        } catch (PDOException $e) {
+
+            echo "Error-002 model-banners_index getAll".$e->getMessage();
+
+            
+
+        }
+       
+    }
 
 
     
@@ -314,6 +333,30 @@ class Usuario{
 
             
 
+        }
+       
+    }
+
+
+     //LOGIN
+     public function deleteUser(){
+        
+        try {
+            //$con = $this->db->connect();
+            $statement = $this->con->prepare("DELETE FROM usuarios WHERE id = ?");
+            $query = $statement->execute([$this->getId()]); # Pasar en el mismo orden de los ?
+            #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
+            #Con eso podemos evaluar
+            if($query){
+                return true;
+            }
+            
+
+        } catch (PDOException $e) {
+            
+            echo "error-delete-categoria";
+
+            return false;
         }
        
     }

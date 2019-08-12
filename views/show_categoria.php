@@ -7,12 +7,12 @@
 </h1>
 
 <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <li class="breadcrumb-item text-primary">
     Home
   </li>
-  <li class="breadcrumb-item ">Descubre</li>
+  <li class="breadcrumb-item text-primary ">Descubre</li>
   <li class="breadcrumb-item text-dark">
-    <a href=""></a>
+    <a class="text-capitalize" href=""><?php echo $titulo;?></a>
   </li>
 </ol>
 
@@ -25,7 +25,11 @@
                 <h4 class="card-title">
                 <a href="<?php echo base_url;?>descubre/show_profile&id=<?php echo $row['id'];?>" class="text-info"><?php echo $row['nombre'];?></a>
                 </h4>
-                <p class="card-text"><?php echo $row['telefono'];?></p>
+                <p class="card-text">
+                <?php echo 'calle: '.$row['calle'].'<br>';?>
+                <?php echo 'colonia: '.$row['colonia'].'<br>';?>
+                <?php echo 'telefono: '.$row['telefono'].'<br>';?>
+                </p>
                 <a href="<?php echo base_url;?>descubre/show_profile&id=<?php echo $row['id'];?>" class="btn btn-primary">Ver mas...</a>
             </div>
             </div>

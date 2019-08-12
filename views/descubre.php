@@ -8,7 +8,7 @@
 
 <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="index.html">Home</a>
+    <a class="text-primary" href="<?php echo base_url ?>">Home</a>
   </li>
   <li class="breadcrumb-item text-dark">Descubre</li>
 </ol>

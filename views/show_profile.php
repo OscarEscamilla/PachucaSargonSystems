@@ -12,7 +12,7 @@
 
         <div class="card">
           <div class="card-header">
-            <h3 class="">
+            <h4 class="">
             <p id="nombre-perfil" class>
             <?php if($row['logo'] != null && $row['logo'] != ''):?>
               <img class="img-fluid rounded" src="<?php echo base_url.$row['logo']?> " alt="" id="logo-user">
@@ -22,7 +22,7 @@
             <?php endif; ?>
             
             <?php echo $row['nombre'];?> <!-- Nombre de la empresa--></p>
-            </h3>
+            </h4>
             
           </div>
           <div class="card-body">
