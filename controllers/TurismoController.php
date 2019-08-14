@@ -56,7 +56,11 @@ class turismoController{
                 $banner  = $this->modelBanners->updateBanner();
 
                 if($banner){
-                    header('Location:'.base_url.'turismo/index');
+                    //header('Location:'.base_url.'turismo/index');
+
+                    echo "<script>location.href='".base_url."turismo/index';</script>";
+
+                    die();
                 }else{
                     $_SESSION['error_banner'] = 'ah ocurrido un error';
                 }
@@ -89,7 +93,12 @@ class turismoController{
                 $banner  = $this->modelBanners->updateBanner();
 
                 if($banner){
-                    header('Location:'.base_url.'turismo/index');
+                    //header('Location:'.base_url.'turismo/index');
+                    echo "<script>location.href='".base_url."turismo/index';</script>";
+
+                    die();
+
+                    
                 }else{
                     $_SESSION['error_banner'] = 'Ah ocurrido un error';
                 }

@@ -51,7 +51,10 @@ class adminController{
                 $banner  = $this->modelBanners->updateBanner();
 
                 if($banner){
-                    header('Location:'.base_url);
+                    //header('Location:'.base_url);
+                    echo "<script>location.href='".base_url."';</script>";
+
+                    die();
                 }else{
                     $_SESSION['error_banner'] = 'ah ocurrido un error';
                 }
@@ -84,7 +87,11 @@ class adminController{
                 $banner  = $this->modelBanners->updateBanner();
 
                 if($banner){
-                    header('Location:'.base_url);
+                    //header('Location:'.base_url);
+
+                    echo "<script>location.href='".base_url."';</script>";
+
+                    die();
                 }else{
                     $_SESSION['error_banner'] = 'Ah ocurrido un error';
                 }

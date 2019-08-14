@@ -191,14 +191,15 @@ class userController{
             unset($_SESSION['rol']);
 
 
-            header('Location:'.base_url);
+            //header('Location:'.base_url);
+            echo "<script>location.href='".base_url."';</script>";
+
+            die();
         }
 
         //header('Location:'.base_url);
 
-        echo "<script>location.href='".base_url."';</script>";
-
-        die();
+        
     }
 
 

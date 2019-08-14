@@ -16,7 +16,10 @@ class registroController{
         if(!isset($_SESSION['usuario'])){
             require_once 'views/usuarios/registro.php';
         }else{
-            header('Location:'.base_url);
+            //header('Location:'.base_url);
+            echo "<script>location.href='".base_url."';</script>";
+
+            die();
         }
     }
 
@@ -61,7 +64,11 @@ class registroController{
            
         }
       
-        header('Location:'.base_url.'registro/index');
+        //header('Location:'.base_url.'registro/index');
+
+        echo "<script>location.href='".base_url."registro/index';</script>";
+
+        die();
         
         
     

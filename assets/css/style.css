@@ -364,3 +364,16 @@ a{
   .dropdown-item:hover{
     background-color: #3771ce;
   }
+
+
+  .link-hover a:hover{
+    color: #3771ce !important;
+  }
+
+  .text-info{
+    color: #2a508d !important;
+  }
+
+  .bg-info{
+    background-color: #2a508d !important;
+  }

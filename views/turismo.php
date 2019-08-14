@@ -445,7 +445,7 @@
 </div>
 <div class="row">
     
-        <div class="col-md-6 mr-0 pr-1">
+        <div class="col-md-6 mr-0 pr-3 pt-3">
             <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
             <form action="<?php echo base_url;?>turismo/banner_update_left" method="post" enctype="multipart/form-data">
                 <div class="form-group col-md-6">
@@ -461,7 +461,7 @@
         <img src="<?php echo base_url.$banners[1]['path']; ?>" alt="" id="banner-index">
         
       </div>
-      <div class="col-md-6 ml-0 pl-1">
+      <div class="col-md-6 ml-0 pl-3 pt-3">
         <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
           <form action="<?php echo base_url;?>turismo/banner_update_rigth" method="post" enctype="multipart/form-data">
             <div class="form-group col-md-6">

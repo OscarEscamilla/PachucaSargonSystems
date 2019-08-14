@@ -32,7 +32,7 @@
                         
                         <input type="submit"  class="btn btn-success btn-block" value="Ingresar">
                     </div>
-                    <a href="<?php echo base_url;?>registro/index">Registrarme</a>
+                    <a class="text-primary " href="<?php echo base_url;?>registro/index">Registrarme</a>
 
                 </form>
             </div>

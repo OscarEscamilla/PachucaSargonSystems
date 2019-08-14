@@ -14,11 +14,12 @@
   <!-- Icons css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
-  <link href="<?php echo base_url;?>assets/css/bootstrap.min(1).css" rel="stylesheet">
+  <link href="<?php echo base_url;?>assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Asap|Cabin+Condensed|Roboto+Condensed&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
  
 
   <link href="<?php echo base_url;?>assets/css/style.css" rel="stylesheet">
@@ -31,7 +32,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-secondary  p-0">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="<?php echo base_url;?>assets/img/logo.gif" alt="" id="logo"></a>
-      <button class="navbar-toggler navbar-toggler-right mr-2 bg-primary  " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right mr-2 bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse mr-3" id="navbarResponsive">
