@@ -73,7 +73,14 @@
         </div>
         <!--termina seccion de tabcontent -->
     </div>
+    
 </div>
+<div class="row">
+  <div class="col-md-12">
+    <img src="<?php echo base_url;?>assets/img/losargon2.png" alt="">
+  </div>
+</div>
+
 
 
 <script>

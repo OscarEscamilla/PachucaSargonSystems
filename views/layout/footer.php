@@ -90,10 +90,12 @@
 <!-- Footer -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="<?php echo base_url;?>assets/js/jquery-3.3.1.slim.min"></script>
-  <script src="<?php echo base_url;?>assets/js/bootstrap.min"></script>
-  <script src="<?php echo base_url;?>assets/js/bootstrap.bundle.min.js"></script>
-
+  <script type="text/javascript" src="<?php echo base_url;?>assets/js/jquery-3.3.1.slim.min"></script>
+  <script type="text/javascript" src="<?php echo base_url;?>assets/js/bootstrap.min"></script>
+  <script type="text/javascript" src="<?php echo base_url;?>assets/js/bootstrap.bundle.min.js"></script>
+  
+  
+  
 </body>
 
 </html>

@@ -167,7 +167,11 @@ class userController{
                         
                         $_SESSION['update'] = true;
 
-                        header('Location:'.base_url.'user/index');
+                        //header('Location:'.base_url.'user/index');
+
+                        echo "<script>location.href='".base_url."user/index';</script>";
+
+                        die();
                     }
                     
                 }else{
@@ -185,8 +189,16 @@ class userController{
         if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){
             unset($_SESSION['usuario']);
             unset($_SESSION['rol']);
+
+
             header('Location:'.base_url);
         }
+
+        //header('Location:'.base_url);
+
+        echo "<script>location.href='".base_url."';</script>";
+
+        die();
     }
 
 

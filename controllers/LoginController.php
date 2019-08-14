@@ -16,7 +16,11 @@ class loginController{
         if(!isset($_SESSION['usuario'])){
             require_once 'views/usuarios/login.php';
         }else{
-            header('Location:'.base_url);
+            //header('Location:'.base_url);
+
+            echo "<script>location.href='".base_url."';</script>";
+
+            die();
         }
         
     }
@@ -26,7 +30,7 @@ class loginController{
         //comprobar los datos que llegan de POST
         if (isset($_POST)) {
             // realizar consulta a db con los datos recibidos
-           
+            echo "<br><br><br><h1>entro al post</h1>";
             //envio de email y password recibidos por post enviados al modelo para ser usados en la consulta a db
             $this->modelUsuario->setCorreo($_POST['correo']);
             $this->modelUsuario->setPassword(md5($_POST['password']));
@@ -47,8 +51,10 @@ class loginController{
                     
                     //require_once 'views/usuarios/panel_admin.php';
 
+                    echo "<script>location.href='".base_url."admin/index';</script>";
 
-                    header('Location:'.base_url.'admin/index');
+                    die();
+                    //header('Location:'.base_url.'admin/index');
 
                 }elseif ($this->modelUsuario->getRol() == 'user') {
                     
@@ -57,7 +63,10 @@ class loginController{
                     //require_once 'views/usuarios/panel_user.php';
 
 
-                    header('Location:'.base_url.'user/index');
+                    //header('Location:'.base_url.'user/index');
+                    echo "<script>location.href='".base_url."user/index';</script>";
+
+                    die();
                 }   
 
 
@@ -66,7 +75,11 @@ class loginController{
                 //invalidar session y mostrar mensaje
                 
                 $_SESSION['login'] = 'fallido';
-                header('Location:'.base_url.'login/index');
+                //header('Location:'.base_url.'login/index');
+
+                echo "<script>location.href='".base_url."login/index';</script>";
+
+                die();
                 
             }
             

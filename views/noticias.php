@@ -13,6 +13,7 @@
     </ol>
 
     <div class="row">
+        <div class="table-responsive-md">
         <table width="100%" border="0">
             <tbody>
                 <tr>
@@ -156,6 +157,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
 </div>
 

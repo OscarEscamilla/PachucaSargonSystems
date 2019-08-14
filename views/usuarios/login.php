@@ -16,22 +16,19 @@
             </div>
             <div class="card-body">
                 <form action="<?php echo base_url;?>login/log" method="POST" >
-                    <div class="input-group pb-4">
+                    <div class="form-group">
                         
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                        </div>
+                        <label for="correo">Correo</label>
                         <input type="email" name="correo" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     
-                    <div class="input-group pb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-car"></i></span>
-                        </div>
+                    <div class="form -group">
+                        <label for="password ">Contraseña</label>
                         <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                        <br>
                     </div>
                     
-                    <div class="form-group mb-4">
+                    <div class="form-group">
                         
                         <input type="submit"  class="btn btn-success btn-block" value="Ingresar">
                     </div>
