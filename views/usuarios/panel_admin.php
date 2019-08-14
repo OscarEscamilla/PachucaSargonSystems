@@ -40,8 +40,15 @@
                                 <td><?php echo $row_all['telefono']?></td>
                                 <td><?php echo $row_all['correo']?></td>
                                 <td>
-                                    <a class="btn-info btn-sm" href=" ">Update</a>
-                                    <a class="btn-danger btn-sm" href="<?php echo base_url.'admin/deleteuser&user='.$row_all['id'];?>">Delete</a>
+                                  <?php if($row_all['estado'] == '1'): ?>
+                                    <a class="btn-warning btn-sm mb-1" href=" ">Desactivar</a>
+                                    
+                                  <?php elseif($row_all['estado'] == '0'):?>
+                                    <a class="btn-info btn-sm mb-1" href=" ">  Activar  </a>
+                                    
+                                  <?php endif; ?>
+                                    
+                                  <a class="btn-danger btn-sm" href="<?php echo base_url.'admin/deleteuser&user='.$row_all['id'];?>">Delete</a>
                                 </td>
                             </tr>
                         <?php  endforeach; ?>
@@ -77,7 +84,10 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <img src="<?php echo base_url;?>assets/img/losargon2.png" alt="">
+    
+       <img src="<?php echo base_url;?>assets/img/losargon2.png" class="img-fluid  mt-3 mb-3" id="sargon-img">
+    
+    
   </div>
 </div>
 

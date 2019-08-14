@@ -377,3 +377,8 @@ a{
   .bg-info{
     background-color: #2a508d !important;
   }
+
+  #sargon-img{
+    display:block;
+    margin:auto;
+  }

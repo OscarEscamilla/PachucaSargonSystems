@@ -170,14 +170,21 @@ class Usuario{
     //END GETTERS AND SETTERS
     
     public function getAll(){
+
+
         try {
+            $sql = 'SELECT * FROM usuarios WHERE rol = :rol';
+            $stmt = $this->con->prepare($sql);
+            
+            $stmt->execute(['rol' => $this->getRol()]);
 
-            $sql = 'SELECT * FROM usuarios';
+            $resultado = $stmt->fetchAll();
 
-            $result = $this->con->query($sql);
-            return $result;
+            if($resultado){//si existe un resultado lo recorremos y asignamos a las variables por su getter y setter
 
-
+                return $resultado;
+                
+            }
         } catch (PDOException $e) {
 
             echo "Error-002 model-banners_index getAll".$e->getMessage();

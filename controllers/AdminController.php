@@ -19,6 +19,8 @@ class adminController{
     public function index(){
         Utils::isAdmin();
 
+        $this->modelUsuarios->setRol('user');
+
         $all_users = $this->modelUsuarios->getAll();
 
         require_once 'views/usuarios/panel_admin.php';
