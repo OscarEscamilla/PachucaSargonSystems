@@ -80,7 +80,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center text-white py-3 bg-info">© 2019 Copyright:
-  <a  class="text-white" href="https://www.facebook.com/profile.php?id=100002122052990"> Sargon Systems</a> Desarrollado por Oscar Escamilla
+  <a  class="text-white" href="https://www.facebook.com/profile.php?id=100002122052990"> Sargon Systems Desarrollado por Oscar Escamilla</a>
 </div>
 <!-- Copyright -->
 

@@ -118,10 +118,19 @@ class adminController{
                 
             }
         
+
+        }
+    }
+
+    public function showserver(){
+        echo '<br><br><br><br><br>';
+        
+        echo $_SERVER['SERVER_SOFTWARE'];
+        
     }
 
     
 
     
-}
+
 }
