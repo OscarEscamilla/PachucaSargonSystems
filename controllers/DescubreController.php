@@ -39,6 +39,7 @@ class descubreController{
             $result = $this->modelUsuario->getUser();
            
             require_once('views/show_profile.php');
+            
         }
         
     }

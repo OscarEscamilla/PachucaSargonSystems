@@ -187,7 +187,7 @@ class Usuario{
             }
         } catch (PDOException $e) {
 
-            echo "Error-002 model-banners_index getAll".$e->getMessage();
+            echo "Error-002 model-user getAll".$e->getMessage();
 
             
 
@@ -350,13 +350,12 @@ class Usuario{
         
         try {
             //$con = $this->db->connect();
-            $statement = $this->con->prepare("DELETE FROM usuarios WHERE id = ?");
-            $query = $statement->execute([$this->getId()]); # Pasar en el mismo orden de los ?
+            $stmt = $this->con->prepare("DELETE FROM usuarios WHERE id = :id");
+            $query = $stmt->execute(['id' => $this->getId()]); # Pasar en el mismo orden de los ?
             #execute regresa un booleano. True en caso de que todo vaya bien, falso en caso contrario.
             #Con eso podemos evaluar
-            if($query){
-                return true;
-            }
+            
+            return $query;
             
 
         } catch (PDOException $e) {
@@ -401,7 +400,56 @@ class Usuario{
         }
     }
 
+    public function update_estado(){
+        try {
+            //$con = $this->db->connect();
+            $stmt = $this->con->prepare("UPDATE usuarios SET estado = ? WHERE id = ?");
+            $query = $stmt->execute([
+                $this->getEstado(),
+                $this->getId(),
+                ]); # Pasar en el mismo orden de los ?
+           
+        
+           
+            return $query;
+    
+        } catch (PDOException $e) {
+            
+            return $e->getMessage();
+    
+            
+        }
+    
+    }
+
+
+    public function getOn_off(){
+        try {
+            $sql = 'SELECT * FROM usuarios WHERE rol = :rol AND estado = :estado';
+            $stmt = $this->con->prepare($sql);
+            
+            $stmt->execute(['rol' => $this->getRol(), 'estado' => $this->getEstado()]);
+
+            $resultado = $stmt->fetchAll();
+
+            if($resultado){//si existe un resultado lo recorremos y asignamos a las variables por su getter y setter
+
+                return $resultado;
+                
+            }
+        } catch (PDOException $e) {
+
+            echo "Error-002 model-user getOn_off".$e->getMessage();
+
+            
+
+        }
+    }
+
 
 
 }
+
+
+
 

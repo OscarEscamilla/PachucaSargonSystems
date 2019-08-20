@@ -7,7 +7,9 @@
 #body{
     margin: 0px;
     padding: 0px;
+    height: 100%;
     background-image: url('../img/cubes.png');/*
+
     background: #1777CE;
     background: #727B84;
 background: -moz-linear-gradient(45deg, #727B84 0%, #ECEFFF 96%, #FFFDFD 100%);

@@ -19,9 +19,18 @@ class adminController{
     public function index(){
         Utils::isAdmin();
 
+        //seteamos a la variable rol con su funcion setRol dandole como valor 'user' para asi evitar seleccionar user de tipo admin
         $this->modelUsuarios->setRol('user');
 
         $all_users = $this->modelUsuarios->getAll();
+
+        $this->modelUsuarios->setEstado('1');
+
+        $on_users = $this->modelUsuarios->getOn_off();
+
+        $this->modelUsuarios->setEstado('0');
+
+        $off_users = $this->modelUsuarios->getOn_off();
 
         require_once 'views/usuarios/panel_admin.php';
     }
@@ -109,16 +118,68 @@ class adminController{
     public function deleteuser(){
         if (isset($_GET)) {
             
-            $this->modelUsuarios->setId($_GET['user']);
+            $this->modelUsuarios->setId($_GET['id']);
+        
             $user_delete = $this->modelUsuarios->deleteUser();
+
 
             if($user_delete == true){
                 
-                $_SESSION['delete'] = true;
+                $_SESSION['on_off'] = 'alert-success';
+                $_SESSION['flash'] = 'La empresa fue eliminada correctamente';
+
+                echo "<script>location.href='".base_url."admin/index';</script>";
+
+                die();
                 
             }
         
 
+        }
+    }
+
+    public function on_estado(){
+        if (isset($_GET)) {
+            $this->modelUsuarios->setEstado('1');
+            $this->modelUsuarios->setId($_GET['id']);
+            $on = $this->modelUsuarios->update_estado();
+
+            if($on == true){
+
+                $_SESSION['on_off'] = 'alert-success';
+                $_SESSION['flash'] = 'La empresa se activo correctamente';
+
+                echo "<script>location.href='".base_url."admin/index';</script>";
+
+                die();
+                
+            }else{
+                $_SESSION['on_off'] = 'alert-danger';
+                $_SESSION['flash'] = '¡Ah ocurrido un error!';
+            }
+        }
+    }
+
+    public function off_estado(){
+        if (isset($_GET)) {
+            $this->modelUsuarios->setEstado('0');
+            $this->modelUsuarios->setId($_GET['id']);
+            $off = $this->modelUsuarios->update_estado();
+
+            if($off == true){
+                
+                $_SESSION['on_off'] = 'alert-success';
+                $_SESSION['flash'] = 'La empresa fue desactivada del sitio correctamente';
+            
+                echo "<script>location.href='".base_url."admin/index';</script>";
+
+                die();
+                
+            }else{
+
+                $_SESSION['on_off'] = 'alert-danger';
+                $_SESSION['flash'] = '¡Ah ocurrido un error!';
+            }
         }
     }
 

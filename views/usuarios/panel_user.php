@@ -84,7 +84,13 @@
                     <p><img src="<?php echo base_url;?>assets/img/icons/email.svg" class="mr-3" alt=""><span class="text-primary">Correo:</span> <?php echo $_SESSION['usuario'][0]['correo']?></p>
                   </li>
                   <li>
-                    <p><img src="<?php echo base_url;?>assets/img/icons/global.svg" class="mr-3" id="global" alt=""><span class="text-primary">Sitio Web:</span> <a target="_blank" href="<?php echo $_SESSION['usuario'][0]['sitio_web']?>"><?php echo $_SESSION['usuario'][0]['sitio_web']?></a></p> 
+                    <p>
+                      <img src="<?php echo base_url;?>assets/img/icons/global.svg" class="mr-3" id="global" alt="">
+                      <span class="text-primary">Sitio Web:</span> 
+                      <a target="_blank" href="<?php echo $_SESSION['usuario'][0]['sitio_web']?>">
+                        <?php echo $_SESSION['usuario'][0]['sitio_web']?>
+                      </a>
+                    </p> 
                   </li>
                 </ul>
               </div>

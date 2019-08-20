@@ -93,9 +93,6 @@ class Banners_turismo{
 
             $resultado = $stmt->fetchAll();
 
-            
-         
-
             if($resultado){//si existe un resultado lo recorremos y asignamos a las variables por su getter y setter
 
                 foreach ($resultado as $row) {
