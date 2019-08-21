@@ -6,7 +6,6 @@ class Banners_index{
     private $id;
     private $orientacion;
     private $path;
-
     private $con;
 
 
@@ -15,6 +14,7 @@ class Banners_index{
 
     }
 
+   
 
     public function getId(){
         return $this->id;

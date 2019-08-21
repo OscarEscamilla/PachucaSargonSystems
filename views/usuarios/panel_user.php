@@ -13,7 +13,7 @@
     
     <h1 class="mt-4 mb-3 text-primary">
         <!-- Preview Image -->
-        <p id="nombre-perfil" class>
+        <p id="nombre-perfil" class="text-dark">
         <?php if($_SESSION['usuario'][0]['logo'] != null && $_SESSION['usuario'][0]['logo'] != ''):?>
           <img class="img-fluid rounded" src="<?php echo base_url.$_SESSION['usuario'][0]['logo']?> " alt="" id="logo-user">
         <?php else:?>
@@ -98,13 +98,7 @@
           </div>
         </div>
 
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
+        
 
       </div>
 

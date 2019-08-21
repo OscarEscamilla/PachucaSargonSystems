@@ -16,6 +16,41 @@
   </li>
 </ol>
 
+
+<div class="row mb-4">
+      <div class="col-md-6 mr-0 pr-3 pt-3">
+        <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
+          <form action="<?php echo base_url;?>descubre/banner_update_left" method="post" enctype="multipart/form-data">
+            <div class="form-group col-md-6">
+                <p class="text-primary">Banner Izquierda</p>
+                <input  type="file" id="myFile" name="banner_left" class="btn btn-dark">
+            </div>
+            <div class="form-group col-md-6">
+             <button class="btn btn-success">Actualizar</button>
+            </div>
+           
+          </form>
+        <?php endif;?>
+        <img src="<?php echo base_url.$banners[1]['path']; ?>" alt="" id="banner-index">
+        
+      </div>
+      <div class="col-md-6 ml-0 pl-3 pt-3">
+        <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'admin'):?>
+          <form action="<?php echo base_url;?>descubre/banner_update_rigth" method="post" enctype="multipart/form-data">
+            <div class="form-group col-md-6">
+                <p class="text-primary">Banner Derecho</p>
+                <input  type="file" id="myFile" name="banner_rigth" class="btn btn-dark">
+            </div>
+            <div class="form-group col-md-6">
+             <button class="btn btn-success">Actualizar</button>
+            </div>
+          </form>
+        <?php endif;?>
+        <img src="<?php echo base_url.$banners[0]['path']; ?>" alt="" id="banner-index">
+      </div>
+    </div>
+
+
 <div class="row mb-5">
     <?php foreach($resultados as $row): ?>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
@@ -26,9 +61,9 @@
                 <a href="<?php echo base_url;?>descubre/show_profile&id=<?php echo $row['id'];?>" class="text-info"><?php echo $row['nombre'];?></a>
                 </h4>
                 <p class="card-text">
-                <?php echo 'calle: '.$row['calle'].'<br>';?>
-                <?php echo 'colonia: '.$row['colonia'].'<br>';?>
-                <?php echo 'telefono: '.$row['telefono'].'<br>';?>
+                <?php echo 'Calle: '.$row['calle'].'<br>';?>
+                <?php echo 'Colonia: '.$row['colonia'].'<br>';?>
+                <?php echo 'Telefono: '.$row['telefono'].'<br>';?>
                 </p>
                 <a href="<?php echo base_url;?>descubre/show_profile&id=<?php echo $row['id'];?>" class="btn btn-primary">Ver mas...</a>
             </div>
